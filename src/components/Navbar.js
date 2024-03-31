@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -8,6 +8,7 @@ function Navbar() {
           <Link to="/about"><h4>ABOUT</h4></Link>
           <Link to="/items"><h4>ITEMS</h4></Link>
       </div>
+      <Outlet/>
     </>
   );
 }
